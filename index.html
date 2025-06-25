@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="quiz-container">
+        <h1>🚀 Welcome to the JavaScript Quiz</h1>
+        <p>Test your knowledge with random questions!</p>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="quiz-container" style="display: none;">
+        <h1>JavaScript Quiz</h1>
+        <div id="quiz-box">
+            <div id="question-box">
+                <p id="question">Loading...</p>
+                <div id="answers"></div>
+            </div>
+            <div class="info">
+                <p id="timer">⏱️ Time: <span id="time">15</span>s</p>
+                <p id="score">Score: 0</p>
+            </div>
+            <button id="next-btn">Next</button>
+            <button id="restart-btn" style="display:none;">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
